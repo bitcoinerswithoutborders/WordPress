@@ -7,3 +7,6 @@
 [submodule "c/lib/Titan-Framework"]
 	path = c/lib/Titan-Framework
 	url = git@github.com:bitcoinerswithoutborders/Titan-Framework.git
+[submodule "c/themes/theme.bwb.is"]
+	path = c/themes/theme.bwb.is
+	url = git@github.com:bitcoinerswithoutborders/theme.bwb.is.git
