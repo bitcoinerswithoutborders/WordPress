@@ -1,6 +1,3 @@
-[submodule "c/themes/btcf_classic"]
-	path = c/themes/btcf_classic
-	url = git@github.com:bitcoinfoundation/btcf_classic.git
 [submodule "c/lib/timber"]
 	path = c/lib/timber
 	url = git@github.com:bitcoinerswithoutborders/timber.git
