@@ -33,6 +33,7 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -59,7 +60,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'wp_bwb_235_';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -79,6 +80,35 @@ define('WPLANG', '');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+
+$protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
+
+/**
+ * Move Wordpress directories to custom locations
+ *
+ */
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/c'); // no host name, no trailing backslash
+define('WP_CONTENT_URL', $protocol . $_SERVER['SERVER_NAME'] . '/c');
+
+define('WP_PLUGIN_DIR', $_SERVER['DOCUMENT_ROOT'] . '/c/lib');
+define('WP_PLUGIN_URL', $protocol . $_SERVER['SERVER_NAME'] . '/c/lib');
+
+/**
+ * Define Path of Uploads dir
+ */
+define( 'UPLOADS', 'static' );
+
+/**
+ * Enables the wordpress multisite features
+ */
+define('WP_ALLOW_MULTISITE', true);
+// define('MULTISITE', true);
+// define('SUBDOMAIN_INSTALL', true);
+// define('DOMAIN_CURRENT_SITE', 'bwb.is');
+// define('PATH_CURRENT_SITE', '/');
+// define('SITE_ID_CURRENT_SITE', 1);
+// define('BLOG_ID_CURRENT_SITE', 1);
 
 /* That's all, stop editing! Happy blogging. */
 
