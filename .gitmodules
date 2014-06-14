@@ -1,3 +1,12 @@
 [submodule "c/themes/btcf_classic"]
 	path = c/themes/btcf_classic
 	url = git@github.com:bitcoinfoundation/btcf_classic.git
+[submodule "c/lib/timber"]
+	path = c/lib/timber
+	url = git@github.com:bitcoinerswithoutborders/timber.git
+[submodule "c/lib/wp-less"]
+	path = c/lib/wp-less
+	url = git@github.com:bitcoinerswithoutborders/wp-less.git
+[submodule "c/lib/Titan-Framework"]
+	path = c/lib/Titan-Framework
+	url = git@github.com:bitcoinerswithoutborders/Titan-Framework.git
